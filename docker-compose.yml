@@ -9,3 +9,5 @@ services:
       - AZP_URL=https://dev.azure.com/steffbeckers
       - AZP_TOKEN=<PAT token> # Personal Access Token from Azure DevOps
       - AZP_AGENT_NAME=DESKTOP-STEFF
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
