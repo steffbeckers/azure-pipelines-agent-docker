@@ -1,0 +1,11 @@
+version: "3.5"
+
+services:
+  agent:
+    image: registry.steffbeckers.eu/azure-pipelines-agent
+    container_name: azure-pipelines-agent
+    restart: always
+    environment:
+      - AZP_URL=https://dev.azure.com/steffbeckers
+      - AZP_TOKEN=<PAT token> # Personal Access Token from Azure DevOps
+      - AZP_AGENT_NAME=DESKTOP-STEFF

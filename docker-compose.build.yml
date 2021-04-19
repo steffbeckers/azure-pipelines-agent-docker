@@ -1,0 +1,8 @@
+version: "3.5"
+
+services:
+  agent:
+    image: registry.steffbeckers.eu/azure-pipelines-agent
+    build:
+      context: .
+      dockerfile: Dockerfile
